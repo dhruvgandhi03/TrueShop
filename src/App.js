@@ -20,7 +20,7 @@ function App() {
 
         
       
-        
+        <Showcase/>
         <br /><br />
 
         <Blocks/>
