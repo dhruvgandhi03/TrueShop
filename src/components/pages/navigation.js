@@ -1,9 +1,23 @@
 import React from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
-import Cart from "../svg/cart";
+import { useNavigate } from "react-router-dom";
+
 
 function Navigation() {
+
+  const Nav = useNavigate();
+  const homeclicked = () =>{
+    Nav('/home')
+  }
+  const shopclicked = () =>{
+    Nav('/shop')
+  }
+
+
+
+
+
+
+
   return (
     <div className="navcontainer">
       <div className="logo">
@@ -16,8 +30,8 @@ function Navigation() {
       </div>
 
       <div className="menus">
-        <div className="menuitem">Home</div>
-        <div className="menuitem">Shop</div>
+        <div className="menuitem" onClick={homeclicked}>Home</div>
+        <div className="menuitem" onClick={shopclicked}>Shop</div>
         <div className="menuitem">Special Deals</div>
         <div className="menuitem">Contact</div>
         <div className="menuitem">About</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Productcard from './productcard'
-import '../App.css';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';

@@ -1,11 +1,14 @@
 
 import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/js/dist/dropdown'
-import Navigation from './components/navigation';
-import Slider from './components/slider';
-import Showcase from './components/showcase';
-import Blocks from './components/blocks';
+import Home from './components/pages/Home';
+
+
+import Loginpage from './components/Loginpage';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Shop from './components/shop/shop';
 
 
 
@@ -13,23 +16,22 @@ import Blocks from './components/blocks';
 
 function App() {
   return (
+
+
+    <Router>
     <div>
-        <Navigation/>
-
-        <Slider/>
-
-        
       
-        <Showcase/>
-        <br /><br />
+    <Routes>
+      <Route path="/" exact element={<Loginpage/>} />
+      <Route path="/home" exact element={<Home/>} />
+      <Route path="/shop" exact element={<Shop/>} />
+    </Routes>
 
-        <Blocks/>
-        <Blocks/>
 
-        <br /><br /><br /><br /><br />
+       
 
-        </div>
-
+    </div>
+    </Router>
        
 
         
