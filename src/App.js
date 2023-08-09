@@ -24,6 +24,7 @@ function App() {
         <br /><br />
 
         <Blocks/>
+        <Blocks/>
 
         <br /><br /><br /><br /><br />
 
