@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TrueShop/static/css/main.a7406d2f.css",
-    "main.js": "/TrueShop/static/js/main.ff69d74d.js",
+    "main.css": "/TrueShop/static/css/main.57397269.css",
+    "main.js": "/TrueShop/static/js/main.6c1b2a4f.js",
     "static/js/787.0ff31186.chunk.js": "/TrueShop/static/js/787.0ff31186.chunk.js",
     "index.html": "/TrueShop/index.html",
-    "main.a7406d2f.css.map": "/TrueShop/static/css/main.a7406d2f.css.map",
-    "main.ff69d74d.js.map": "/TrueShop/static/js/main.ff69d74d.js.map",
+    "main.57397269.css.map": "/TrueShop/static/css/main.57397269.css.map",
+    "main.6c1b2a4f.js.map": "/TrueShop/static/js/main.6c1b2a4f.js.map",
     "787.0ff31186.chunk.js.map": "/TrueShop/static/js/787.0ff31186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7406d2f.css",
-    "static/js/main.ff69d74d.js"
+    "static/css/main.57397269.css",
+    "static/js/main.6c1b2a4f.js"
   ]
 }
