@@ -1,13 +1,30 @@
-import React from 'react'
-import Navigation from '../pages/navigation'
+import React, { useState } from "react";
+import Navigation from "../pages/navigation";
+import Shopproductcard from "./shopproductcard";
 
-function Shop() {
+const Shop = () => {
   return (
-    <div>
-     
-      <Navigation/>
-    </div>
-  )
-}
+    <div className="shopbox">
+      <Navigation />
 
-export default Shop
+      
+      <div className="shopcontainer">
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+        <Shopproductcard/>
+      </div>
+    </div>
+  );
+};
+
+export default Shop;

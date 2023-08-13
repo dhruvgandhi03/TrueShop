@@ -6,7 +6,7 @@ import Slider from './slider'
 import Showcase from './showcase'
 
 
-function Home() {
+const Home = ()  =>{
   return (
     <div>
       <Navigation/>
