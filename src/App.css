@@ -92,11 +92,19 @@ body::-webkit-scrollbar {
   align-items: center;
   margin-right: -6vw;
 }
-.menuitem {
+
+.menus a {
   font-weight: 500;
   font-family: "SF Pro Display", sans-serif;
-
+  text-decoration: none;
   margin: 15px;
+  color: black;
+}
+.menus a.active {
+  color: rgb(58, 165, 253);
+  text-decoration: none;
+}
+.menus a.inactive {
   color: black;
 }
 .menuitem:hover {
@@ -125,6 +133,14 @@ body::-webkit-scrollbar {
 .menuitem:hover:after {
   -webkit-transform: translateX(-50%) scaleX(1);
   transform: translateX(-50%) scaleX(1);
+}
+#threebar {
+  font-size: 25px;
+  margin-left: -90px;
+  text-decoration: none;
+  border: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 /* iconns */
@@ -455,25 +471,85 @@ input:focus ~ .input-border {
 /* blocks css */
 
 /* login page css */
+.logoname {
+  height: 100vh;
+  width: 50vw;
+  background-color: #101010d6;
+  background-image: url("https://i.pinimg.com/originals/d1/78/98/d17898a1c9d68472356a48a61b0e1589.jpg");
+  background-size: 102vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 2px solid black;
+}
+.login_title {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_title img {
+  height: 250px;
+  width: 450px;
+}
+.login_des {
+  /* height: 70vh; */
+  display: flex;
+  align-items: start;
+}
+.login_des img {
+  height: 500px;
+  width: 700px;
+  margin-left: 10px;
+}
+
 .logcontainer {
   display: flex;
+  flex-direction: row;
 
   height: 100vh;
   width: 100vw;
+  align-items: center;
 
-  background-color: #e8e8e8;
+  background-color: white;
+}
+.main_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  /* background-color: whitesmoke; */
+  background-image: url("https://i.pinimg.com/564x/b8/84/3f/b8843fbed791d293b92bdf743d1cad31.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  border-left: 2px solid black;
+}
+.title2 {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title2 img {
+  height: 250px;
+  width: 450px;
 }
 .wrapper_log {
-  margin: auto;
+  width: 50vw;
+  height: 70vh;
   --input-focus: #2d8cf0;
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
   --bg-color-alt: #666;
   --main-color: #323232;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
 }
 /* switch card */
 .switch_log {
@@ -747,14 +823,6 @@ input:focus ~ .input-border {
   width: 15px;
 }
 
-#threebar {
-  font-size: 25px;
-  margin-left: -90px;
-}
-
-#threebar:hover {
-  color: #2f81f7;
-}
 .title {
   color: white;
   font-family: "SF Pro Display", sans-serif;

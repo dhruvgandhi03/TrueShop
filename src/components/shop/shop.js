@@ -7,21 +7,20 @@ const Shop = () => {
     <div className="shopbox">
       <Navigation />
 
-      
       <div className="shopcontainer">
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
-        <Shopproductcard/>
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
+        <Shopproductcard />
       </div>
     </div>
   );
