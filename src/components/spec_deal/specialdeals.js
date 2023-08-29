@@ -5,6 +5,9 @@ const Specialdeals = () => {
   return (
     <div>
       <Navigation />
+      <div className="sdcontainer">
+        <div className="heading">Welcome To SpecialDeals Section</div>
+      </div>
     </div>
   );
 };

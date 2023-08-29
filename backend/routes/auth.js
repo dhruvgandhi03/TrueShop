@@ -4,8 +4,9 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 
 router.get("/", (req, res) => {
-  console.log("this is server");
-  res.send("auth is running");
+  fetch("https://fakestoreapi.com/products")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
 });
 
 router.post("/register", async (req, res) => {

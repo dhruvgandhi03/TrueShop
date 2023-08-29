@@ -60,6 +60,7 @@ const Loginpage = () => {
   const [password, setpassword] = useState("");
 
   const submitclicked = async (e) => {
+    Nav("/home");
     e.preventDefault();
 
     const res = await fetch("/login", {

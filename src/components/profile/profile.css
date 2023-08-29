@@ -1,0 +1,62 @@
+.profilecontainer {
+  color: black;
+  display: flex;
+  height: 90vh;
+  width: 70vw;
+  margin: auto;
+  margin-top: 5vh;
+  background: #cedebd;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userdetail {
+  margin-top: 2vh;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 6vh;
+}
+.userImage {
+  width: 20vh;
+  height: 20vh;
+  background: #000;
+  border-radius: 50%;
+  background-position: center;
+}
+.username {
+  font-size: 40px;
+  color: #000;
+  font-family: "Anybody Black";
+  margin-left: 60px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.userdescription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 5vh;
+}
+.userdata {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 15vh;
+  background-color: aliceblue;
+  height: 8vh;
+  width: 25vw;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+}

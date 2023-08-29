@@ -1,0 +1,16 @@
+.sdcontainer {
+  background-image: url("C:\Users\gandh\Documents\VSC\react23\Mark42\trueshop\src\assets\webfinalpage.png");
+  height: 500vh;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -200px;
+}
+
+.heading {
+  font-family: "Anybody Black";
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 300px;
+}

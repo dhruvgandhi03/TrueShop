@@ -156,6 +156,7 @@ body::-webkit-scrollbar {
   margin: 10px;
   font-size: 22px;
   cursor: pointer;
+  color: #000;
 }
 /* icons css */
 
@@ -216,111 +217,13 @@ input:focus ~ .input-border {
 
 /* slider css */
 
-.wrapper {
-  width: 70vw;
-  height: 75vh;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-  margin: 2rem auto;
-  margin-top: 15vh;
-  overflow: hidden;
-}
-.wrapper-holder {
-  display: grid;
-  grid-template-columns: repeat(4, 100%);
-  height: 100%;
-  width: 100%;
-  animation: slider 25s ease-in-out infinite alternate;
-}
-#slider-img-1 {
-  background-image: url("https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-  background-position: center;
-}
-#slider-img-2 {
-  background-image: url("https://images.unsplash.com/photo-1598691800903-24951242c503?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80");
-  background-position: center;
-}
-#slider-img-3 {
-  background-image: url("https://images.unsplash.com/photo-1565127453543-ad97bbbba30d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-  background-position: center;
-}
-#slider-img-4 {
-  background-image: url("https://images.unsplash.com/photo-1571937051549-a27e78978860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-  background-position: center;
-}
-@keyframes slider {
-  0% {
-    transform: translateX(0%);
-  }
-  10% {
-    transform: translateX(-100%);
-  }
-  20% {
-    transform: translateX(-100%);
-  }
-  30% {
-    transform: translateX(-200%);
-  }
-  40% {
-    transform: translateX(-200%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  60% {
-    transform: translateX(-300%);
-  }
-  70% {
-    transform: translateX(-300%);
-  }
-  80% {
-    transform: translateX(-300%);
-  }
-  90% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
 /* slider css */
 
 /* showcase css */
 
-.showcase {
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-
-  margin-top: 5vh;
-  height: 65vh;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .card {
-  position: relative;
-  top: 100px;
+  /* position: relative;
+  top: 100px; */
 
   width: 15vw;
   height: 100%;
@@ -393,6 +296,7 @@ input:focus ~ .input-border {
   display: flex;
   justify-content: end;
   margin-top: 12vh;
+  /* background-color: rgba(165, 231, 231, 0.594); */
 }
 
 .newcard {
@@ -567,11 +471,13 @@ input:focus ~ .input-border {
 .card-side_log::before {
   position: absolute;
   content: "Log in";
+  color: white;
+
   left: -70px;
   top: 0;
   width: 100px;
   text-decoration: underline;
-  color: var(--font-color);
+  /* color: var(--font-color);   */
   font-weight: 600;
 }
 
@@ -582,7 +488,8 @@ input:focus ~ .input-border {
   top: 0;
   width: 100px;
   text-decoration: none;
-  color: var(--font-color);
+  /* color: var(--font-color); */
+  color: white;
   font-weight: 600;
 }
 
@@ -882,8 +789,8 @@ input:focus ~ .input-border {
 
 .image_prod {
   background: rgb(241, 241, 241);
-  width: 100%;
-  height: 100%;
+  width: 16vw;
+  height: 32vh;
   display: grid;
   place-items: center;
 }

@@ -86,9 +86,13 @@ const Navigation = () => {
               <span class="input-border"></span>
             </div>
           </div>
-          <i id="cart" class="fa-solid fa-cart-shopping"></i>
+          <NavLink to="/Cart">
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+          </NavLink>
           <i id="cart" class="fa-solid fa-heart"></i>
-          <i id="cart" class="fa-solid fa-user"></i>
+          <NavLink to="/userProfile">
+            <i id="cart" class="fa-solid fa-user"></i>
+          </NavLink>
         </div>
       </div>
     </div>

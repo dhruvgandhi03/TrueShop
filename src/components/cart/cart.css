@@ -1,0 +1,49 @@
+.cartcontainer {
+  font-family: "SF Pro Display";
+  text-align: center;
+  /* height: 1000vh; */
+}
+.cartheading {
+  display: grid;
+  grid-template-columns: 55vw 15vw 15vw 15vw;
+  height: 10vh;
+}
+.cartcard {
+  display: grid;
+  width: 100vw;
+
+  grid-template-columns: 15vw 40vw 15vw 15vw 15vw;
+  grid-template-rows: 25vh;
+}
+.carttitle {
+  display: flex;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.carditems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  border-bottom: 1px solid gray;
+  border-: 1px solid gray;
+}
+.titleitem {
+  color: rgb(117, 117, 105);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.btn {
+  font-size: 20px;
+  color: black;
+}
