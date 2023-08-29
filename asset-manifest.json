@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/TrueShop/static/css/main.171f7c11.css",
-    "main.js": "/TrueShop/static/js/main.8c0a8477.js",
+    "main.css": "/TrueShop/static/css/main.aecafd80.css",
+    "main.js": "/TrueShop/static/js/main.ce2c87c3.js",
     "static/js/787.0ff31186.chunk.js": "/TrueShop/static/js/787.0ff31186.chunk.js",
     "static/media/main_logo.png": "/TrueShop/static/media/main_logo.2ca5534e33bc23ee1113.png",
+    "static/media/webfinalpage.png": "/TrueShop/static/media/webfinalpage.0859c2bd2d85921f8ab4.png",
     "static/media/logo2.png": "/TrueShop/static/media/logo2.08cb19ab3556e4e61058.png",
     "static/media/main_logo_black.png": "/TrueShop/static/media/main_logo_black.2a82e7c09cb0096a8f9f.png",
     "index.html": "/TrueShop/index.html",
-    "main.171f7c11.css.map": "/TrueShop/static/css/main.171f7c11.css.map",
-    "main.8c0a8477.js.map": "/TrueShop/static/js/main.8c0a8477.js.map",
+    "main.aecafd80.css.map": "/TrueShop/static/css/main.aecafd80.css.map",
+    "main.ce2c87c3.js.map": "/TrueShop/static/js/main.ce2c87c3.js.map",
     "787.0ff31186.chunk.js.map": "/TrueShop/static/js/787.0ff31186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.171f7c11.css",
-    "static/js/main.8c0a8477.js"
+    "static/css/main.aecafd80.css",
+    "static/js/main.ce2c87c3.js"
   ]
 }
