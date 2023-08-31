@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./cart.css";
 import Cartcard from "./Cartcard";
 import { NavLink } from "react-router-dom";

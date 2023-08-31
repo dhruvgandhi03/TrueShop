@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Sidebar from "../sidebar";
 import { useState } from "react";
 
 const Navigation = () => {
   const [show, setshow] = useState(false);
 
-  const Nav = useNavigate();
+  // const Nav = useNavigate();
 
   const Sidebarclicked = () => {
     if (!show) {
