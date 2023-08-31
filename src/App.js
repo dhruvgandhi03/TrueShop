@@ -7,10 +7,9 @@ import Home from "./components/pages/Home";
 import UserProfile from "./components/profile/userProfile";
 import Specialdeals from "./components/spec_deal/specialdeals";
 import Loginpage from "./components/Loginpage";
-import Cart from "./components/cart/Cart";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Shop from "./components/shop/shop";
-
+import Cart from "./cart/Cart";
 function App() {
   return (
     <Router>
