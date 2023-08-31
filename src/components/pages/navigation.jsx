@@ -1,17 +1,12 @@
 import React from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Sidebar from "../sidebar";
-import { useState, useReducer } from "react";
+import { useState } from "react";
 
 const Navigation = () => {
   const [show, setshow] = useState(false);
 
   const Nav = useNavigate();
-
-  // const homeclicked = () => {
-  //   <NavLink to={}>  </NavLink>
-  //   document.querySelector(".menuitem").setAttribute("color", "white");
-  // };
 
   const Sidebarclicked = () => {
     if (!show) {

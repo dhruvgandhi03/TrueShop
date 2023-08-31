@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navigation from "../pages/navigation";
 import Shopproductcard from "./shopproductcard";
 import Products from "./shopapi";

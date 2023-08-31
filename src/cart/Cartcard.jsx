@@ -1,9 +1,9 @@
 import { React, useState, useEffect, useContext } from "react";
 import "./cart.css";
-import Products from "../components/shop/shopapi";
+// import Products from "../components/shop/shopapi";
 import { MainData } from "../Productcontext";
 const Cartcard = () => {
-  const { value, setValue } = useContext(MainData);
+  const { value } = useContext(MainData);
   const [cartdata, setCartdata] = useState(value);
   console.log(cartdata);
 

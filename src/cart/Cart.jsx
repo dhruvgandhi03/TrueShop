@@ -3,7 +3,7 @@ import "./cart.css";
 import Cartcard from "./Cartcard";
 import { NavLink } from "react-router-dom";
 
-import Products from "../components/shop/shopapi";
+// import Products from "../components/shop/shopapi";
 
 const Cart = () => {
   return (

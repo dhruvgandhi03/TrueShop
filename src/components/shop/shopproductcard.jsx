@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
 import { MainData } from "../../Productcontext";
 
 const Shopproductcard = ({ productData }) => {
