@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Context from "./Productcontext";
+import CategoryContext from "./categoryContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Context>
-      <App />
-    </Context>
+    <CategoryContext>
+      <Context>
+        <App />
+      </Context>
+    </CategoryContext>
   </React.StrictMode>
 );
 

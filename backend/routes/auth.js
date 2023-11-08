@@ -11,7 +11,6 @@ router.get("/", (req, res) => {
 
 router.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
-  const bcrypt = require("bcryptjs");
 
   if (!name || !email || !password) {
     return res.status(422).json({ message: "fail" });

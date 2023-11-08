@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
 import { MainData } from "../../Productcontext";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Shopproductcard = ({ productData }) => {
   const { value, setValue } = useContext(MainData);
+  // const [cartshow, setCartshow] = useState(false);
 
   const cartclicked = (id, title, price, image, quantity, subtotal) => {
     let existing = value.find((elem) => elem.id === id);
@@ -19,16 +23,35 @@ const Shopproductcard = ({ productData }) => {
         subtotal: subtotal,
       };
       setValue([...value, newData]);
-      window.alert("item added");
+      toast.success("Item Added To The Cart", {
+        position: "top-right",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     } else {
-      window.alert("item already exist");
+      toast.error("Item Already Exist in The Cart", {
+        position: "top-right",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     }
   };
 
   return (
     <>
       {productData.map((curElem) => {
-        const { id, image, price, title, quantity, subtotal } = curElem;
+        const { id, image, price, title, quantity, subtotal, category } =
+          curElem;
         return (
           <>
             <div className="products">

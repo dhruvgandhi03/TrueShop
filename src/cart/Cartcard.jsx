@@ -1,10 +1,12 @@
 import { React, useState, useEffect, useContext } from "react";
 import "./cart.css";
-// import Products from "../components/shop/shopapi";
+import Deletebtn from "../svg/Alert";
 import { MainData } from "../Productcontext";
 const Cartcard = () => {
   const { value } = useContext(MainData);
   const [cartdata, setCartdata] = useState(value);
+  const [total, settotal] = useState(0);
+
   console.log(cartdata);
 
   const plusclicked = (curelem_id, index) => {
@@ -53,7 +55,24 @@ const Cartcard = () => {
 
   useEffect(() => {
     localStorage.setItem("mytodolist", JSON.stringify(cartdata));
+    countsubtotal();
   }, [cartdata]);
+
+  const countsubtotal = () => {
+    if (cartdata.length == 0) {
+      document.getElementById("totalamount").style.opacity = "0";
+      document.getElementById("emptycart").style.opacity = "1";
+    }
+    const items = cartdata.map((item) => {
+      return item.subtotal;
+    });
+
+    var sub = 0;
+    for (var i = 0; i < items.length; i++) {
+      sub = sub + items[i];
+    }
+    settotal(sub);
+  };
 
   return (
     <div>
@@ -96,13 +115,15 @@ const Cartcard = () => {
               <div className="carditems">{subtotal}$</div>
               <div className="carditems">
                 <button className="deletebtn" onClick={() => itemDelete(id)}>
-                  <i class="fa-solid fa-trash"></i>
+                  <Deletebtn />
                 </button>
               </div>
             </div>
           </>
         );
       })}
+      <h1 id="totalamount">Total Amount : {total}</h1>
+      <h1 id="emptycart"> Your Cart Is Empty !!!</h1>
     </div>
   );
 };

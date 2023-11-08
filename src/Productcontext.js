@@ -19,4 +19,5 @@ function Context({ children }) {
     </MainData.Provider>
   );
 }
+
 export default Context;

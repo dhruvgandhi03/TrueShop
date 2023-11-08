@@ -2,10 +2,12 @@
   font-family: "SF Pro Display";
   text-align: center;
   /* height: 1000vh; */
+  /* background-color: rgb(20 21 26); */
+  /* color: white; */
 }
 .cartheading {
   display: grid;
-  grid-template-columns: 50vw 15vw 15vw 15vw 5vw;
+  grid-template-columns: 5vw 45vw 15vw 15vw 15vw 5vw;
   height: 10vh;
 }
 .cartcard {
@@ -31,7 +33,6 @@
   justify-content: center;
   vertical-align: center;
   border-bottom: 1px solid gray;
-  border-: 1px solid gray;
 }
 .titleitem {
   color: rgb(117, 117, 105);
@@ -49,8 +50,23 @@
 }
 .deletebtn {
   font-size: 20px;
-
-  color: red;
-  border: 0px;
+  /* background-color: rgb(20 21 26); */
   background-color: white;
+  color: rgb(255, 255, 255);
+  border: 0px;
+}
+#leftarr {
+  border-right: 1px solid gray;
+  font-size: 22px;
+}
+#leftarr:active {
+  background-color: rgb(58, 165, 253);
+  color: white;
+}
+#totalamount {
+  position: relative;
+  top: 5vh;
+}
+#emptycart {
+  opacity: 0;
 }

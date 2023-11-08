@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 // import Navigation from "../pages/navigation";
 
 const UserProfile = () => {
@@ -10,29 +11,48 @@ const UserProfile = () => {
           <p>Profile</p>
           <div className="userimage"></div>
           <div>
-            <div className="profilemenu">menu1</div>
-            <div className="profilemenu">menu2</div>
+            <div className="profilemenu">
+              <NavLink
+                to="/Cart"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                My Cart
+              </NavLink>
+            </div>
+            <div className="profilemenu">
+              <NavLink
+                to="/Cart"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                My Orders
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="profileinfo">
           <div className="fields">
             Name : <br />
-            <input readOnly value="name field" />
+            <input readOnly value="" />
           </div>
           <div className="fields">
-            Name : <br />
-            <input readOnly value="name field" />
+            Mobile No : <br />
+            <input readOnly value="" />
           </div>
           <div className="fields">
-            Name : <br />
-            <input readOnly value="name field" />
+            Email address : <br />
+            <input readOnly value="" />
           </div>
           <div className="fields">
-            Name : <br />
-            <input readOnly value="name field" />
+            Country : <br />
+            <input readOnly value="" />
           </div>
         </div>
-        <div className="profileextra"></div>
+        <div className="profileextra">
+          <div>
+            <p>Settings</p>
+          </div>
+          <div> </div>
+        </div>
       </div>
     </>
   );

@@ -1,30 +1,101 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Sidebar from "../sidebar";
-import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+
+import Badge, { BadgeProps } from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { MainData } from "../../Productcontext";
 
 const Navigation = () => {
-  const [show, setshow] = useState(false);
+  const [show, setshow] = useState(true);
+  const [category, setcategory] = useState(false);
 
-  // const Nav = useNavigate();
+  const { value } = useContext(MainData);
+  console.log(value.length);
+
+  const Nav = useNavigate();
+
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+    "& .MuiBadge-badge": {
+      right: -3,
+      top: 13,
+      border: `2px solid ${theme.palette.background.paper}`,
+      padding: "0 4px",
+    },
+  }));
 
   const Sidebarclicked = () => {
     if (!show) {
       setshow(true);
+      document.getElementById("setbar").style.left = "-300px";
+      document.getElementById("threebar").style.color = "#0d1117";
     } else {
       setshow(false);
+      document.getElementById("setbar").style.left = "0px";
+      document.getElementById("threebar").style.color = "#2f81f7";
+    }
+  };
+
+  async function Wishlistclicked() {
+    try {
+      const res = await fetch(
+        "https://dhruvgandhi03.github.io/TrueShopAPI/new_Api.json"
+      );
+
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const categoryclicked = () => {
+    if (!category) {
+      setcategory(true);
+      document.getElementById("categories").style.display = "block";
+    } else {
+      setcategory(false);
+      document.getElementById("categories").style.display = "none";
     }
   };
 
   return (
     <div>
-      {show && <Sidebar />}
+      <div id="setbar" className="sidebar">
+        <div className="title">Title</div>
+        <div class="input_shop">
+          <button class="value_shop" onClick={categoryclicked}>
+            Categories
+          </button>
+          <div id="categories">
+            <p>All</p>
+            <p>T shirts</p>
+            <p>Shirts</p>
+            <p>Bottoms</p>
+            <p>Sweat shirt</p>
+          </div>
+          <button class="value_shop" onClick={() => Nav("/shop")}>
+            Shop
+          </button>
+          <button class="value_shop" onClick={() => Nav("/SpecialDeals")}>
+            Speacial Deals
+          </button>
+          <button class="value_shop" onClick={() => Nav("/Cart")}>
+            My Cart
+          </button>
+          <button class="value_shop" onClick={() => Nav("/UserProfile")}>
+            My Profile
+          </button>
+        </div>
+      </div>
       <div className="navcontainer">
         <div id="threebar" onClick={Sidebarclicked}>
           <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div className="logo">
+        <div className="logo" onClick={() => Nav("/home")}>
           <div class="button">
             <div class="box">T</div>
             <div class="box">R</div>
@@ -47,7 +118,7 @@ const Navigation = () => {
             to="/shop"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
-            shop
+            Shop
           </NavLink>
           <NavLink
             to="/SpecialDeals"
@@ -56,7 +127,7 @@ const Navigation = () => {
             SpecialDeals
           </NavLink>
           <NavLink
-            to="/Contact"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Contact
@@ -82,9 +153,16 @@ const Navigation = () => {
             </div>
           </div>
           <NavLink to="/Cart">
-            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            {/* <i id="cart" class="fa-solid fa-cart-shopping"></i> */}
+            <IconButton aria-label="cart">
+              <StyledBadge badgeContent={value.length} color="secondary">
+                <ShoppingCartIcon
+                  style={{ color: "black", fontSize: "25px" }}
+                />
+              </StyledBadge>
+            </IconButton>
           </NavLink>
-          <i id="cart" class="fa-solid fa-heart"></i>
+          <i id="cart" class="fa-solid fa-heart" onClick={Wishlistclicked}></i>
           <NavLink to="/userProfile">
             <i id="cart" class="fa-solid fa-user"></i>
           </NavLink>

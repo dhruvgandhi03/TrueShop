@@ -1,26 +1,30 @@
 import React from "react";
 import "./cart.css";
 import Cartcard from "./Cartcard";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // import Products from "../components/shop/shopapi";
 
 const Cart = () => {
+  const Nav = useNavigate();
   return (
     <div className="cartcontainer">
       <div className="cartheading">
+        <div id="leftarr" className="titleitem" onClick={() => Nav(-1)}>
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
         <div className="carttitle">
-          <NavLink to="/shop">
-            <i
-              class="fa-solid fa-cart-arrow-down"
-              style={{ color: "#3f7fee", fontSize: "22px" }}
-            ></i>
-          </NavLink>
+          <i
+            class="fa-solid fa-cart-arrow-down"
+            style={{ color: "#3f7fee", fontSize: "22px" }}
+          ></i>
           My Cart{" "}
         </div>
-        <div className="titleitem">price</div>
-        <div className="titleitem">quantity</div>
-        <div className="titleitem">subtotal</div>
+
+        <div className="titleitem">Price</div>
+        <div className="titleitem">Quantity</div>
+        <div className="titleitem">SubTotal</div>
         <div className="titleitem"></div>
       </div>
       <Cartcard />

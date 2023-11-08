@@ -7,10 +7,15 @@ body::-webkit-scrollbar {
 #root::-webkit-scrollbar {
   display: none;
 }
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 #root {
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
 }
 
 /* css for logo */
@@ -138,12 +143,15 @@ body::-webkit-scrollbar {
   transform: translateX(-50%) scaleX(1);
 }
 #threebar {
+  height: 40px;
+  width: 40px;
   font-size: 25px;
   margin-left: -90px;
   text-decoration: none;
   border: 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* iconns */
@@ -160,6 +168,9 @@ body::-webkit-scrollbar {
   font-size: 22px;
   cursor: pointer;
   color: #000;
+}
+#cart:active {
+  color: rgb(58, 165, 253);
 }
 /* icons css */
 
@@ -295,17 +306,30 @@ input:focus ~ .input-border {
 
 /* blocks css */
 .blocks {
+  background-color: #212121;
   width: 100%;
   display: flex;
-  justify-content: end;
-  margin-top: 12vh;
+  flex-direction: column;
+  position: relative;
+  /* top: 10vh; */
+  /* justify-content: end; */
+  /* margin-top: 12vh; */
   /* background-color: rgba(165, 231, 231, 0.594); */
 }
-
+.cardbox {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .newcard {
-  margin-right: 5vw;
-  width: 45vw;
-  height: 75vh;
+  position: relative;
+  /* top: 2vh; */
+
+  width: 90vw;
+  height: 80vh;
   border-radius: 4px;
   background: #212121;
   display: flex;
@@ -327,15 +351,15 @@ input:focus ~ .input-border {
   align-items: center;
 }
 #one {
-  background-image: url("https://images.unsplash.com/photo-1524738258074-f8125c6a7588?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=1200");
   background-position: center;
 }
 #two {
-  background-image: url("https://images.unsplash.com/photo-1516369033203-ba1a9f0e3b5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/4563870/pexels-photo-4563870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
 }
 #three {
-  background-image: url("https://plus.unsplash.com/premium_photo-1673757121099-aa5ed38b5da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80");
+  background-image: url("https://images.pexels.com/photos/11924647/pexels-photo-11924647.jpeg?auto=compress&cs=tinysrgb&w=1960&h=750&dpr=1");
   background-position: center;
 }
 
@@ -344,16 +368,16 @@ input:focus ~ .input-border {
 }
 
 .newcard p span {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "Akira Super Expanded", sans-serif;
   font-weight: 700;
   font-size: 30px;
   min-width: 14em;
-  padding: 0.5em;
+  /* padding: 0.5em; */
   text-align: center;
   transform: rotate(-90deg);
   transition: all 0.5s;
   text-transform: uppercase;
-  color: #f3174e;
+  color: whitesmoke;
   letter-spacing: 0.1em;
 }
 
@@ -361,16 +385,18 @@ input:focus ~ .input-border {
   transform: rotate(0);
 }
 .description {
-  font-family: "SF Pro Display", sans-serif;
-  font-weight: 600;
-  font-size: 35px;
+  margin-top: 20vh;
+  position: relative;
+  top: 10vh;
+  font-family: "Anybody Black", sans-serif;
+  font-weight: 500;
+  font-size: 75px;
   padding: 10px;
-  margin: 10px;
-  margin-top: 0px;
-  margin-right: 5vw;
-  text-align: justify;
+  /* margin: 10px; */
+
+  text-align: center;
   color: #212121;
-  background: -webkit-linear-gradient(#212121, #da2828);
+  background: -webkit-linear-gradient(#ade4db, #6da9e4, #f6ba6f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke: 0.5px #ff5a91;  */
@@ -429,7 +455,7 @@ input:focus ~ .input-border {
   background-image: url("https://i.pinimg.com/564x/b8/84/3f/b8843fbed791d293b92bdf743d1cad31.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 800px;
+  background-size: 102vh;
   border-left: 2px solid black;
 }
 .title2 {
@@ -660,15 +686,17 @@ input:focus ~ .input-border {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 12vh;
+  text-decoration: none;
 }
 
 .sidebar {
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in-out;
 
   height: 150vh;
   width: 19vw;
   background: #0d1117;
   position: fixed;
+  left: -300px;
   top: 10vh;
   bottom: 0vh;
   z-index: 9;
@@ -699,6 +727,7 @@ input:focus ~ .input-border {
   gap: 5px;
   cursor: pointer;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .value_shop:not(:active):hover,
@@ -767,18 +796,23 @@ input:focus ~ .input-border {
   padding-bottom: 3.4em;
 }
 
+.card_prod:hover {
+  scale: 1.1;
+  transition: all ease-in-out 0.2s;
+}
+
 .card_prod .title_prod {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 17px;
   position: absolute;
   left: 0.625em;
-  bottom: 1.875em;
+  bottom: 1.6em;
   font-weight: 400;
   color: #000;
 }
 
 .card_prod .price_prod {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Arial Narrow Bold", sans-serif;
   font-size: 0.9em;
   position: absolute;
   left: 0.625em;
@@ -800,8 +834,40 @@ input:focus ~ .input-border {
 .carticon {
   font-size: 25px;
   position: absolute;
-  left: 12vw;
-  bottom: 1vh;
+  left: 13.2vw;
+  bottom: 2vh;
   color: #000;
+}
+.carticon:active {
+  color: green;
+}
+#cartadded {
+  height: 7vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  background-color: greenyellow;
+  color: black;
+  position: fixed;
+  top: 15vh;
+  opacity: 0;
+}
+
+#cartextra {
+  animation: cart 2s ease-in;
+}
+
+@keyframes cart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /* shop product card */

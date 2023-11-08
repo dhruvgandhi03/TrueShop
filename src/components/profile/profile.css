@@ -13,7 +13,10 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: blanchedalmond;
+  background-color: #eef2ff;
+  border-right: 2px solid white;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 .profilepic p {
   position: relative;
@@ -28,7 +31,7 @@
   width: 25vh;
   border-radius: 50%;
   position: relative;
-  bottom: 10vh;
+  /* bottom: 10vh; */
   background-image: url("https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_1280.png");
   background-position: center;
   background-size: 25vh;
@@ -38,19 +41,41 @@
   height: 10vh;
   font-size: 25px;
   font-family: "SF Pro Display";
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 5vh;
+
+  border-radius: 10px;
+}
+.profilemenu:hover {
+  background-color: white;
 }
 .profileinfo {
   font-size: 15px;
   font-family: "SF Pro Display";
-  background-color: rgb(185, 122, 27);
+  background-color: #eef2ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  border-right: 2px solid white;
+
   /* justify-content: center; */
 }
 .profileextra {
-  background-color: rgb(26, 21, 15);
+  background-color: #eef2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.profileextra p {
+  color: white;
+  font-size: 20px;
 }
 .fields {
   position: relative;
@@ -66,5 +91,5 @@
   border-radius: 3px;
   height: 7vh;
   width: 30vw;
-  background-color: antiquewhite;
+  background-color: white;
 }

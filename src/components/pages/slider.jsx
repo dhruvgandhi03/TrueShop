@@ -32,7 +32,7 @@ const Slider = () => {
                 style={{
                   backgroundImage: `url(${Sliderimage})`,
                   backgroundPosition: "center",
-                  backgroundSize: "160vh",
+                  backgroundSize: "170vh",
                 }}
               >
                 {/*  */}
