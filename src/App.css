@@ -409,7 +409,7 @@ input:focus ~ .input-border {
   width: 50vw;
   background-color: #101010d6;
   background-image: url("https://i.pinimg.com/originals/d1/78/98/d17898a1c9d68472356a48a61b0e1589.jpg");
-  background-size: 102vh;
+  background-size: 104vh;
   background-position: center;
   background-repeat: no-repeat;
   border-right: 2px solid black;
@@ -455,7 +455,7 @@ input:focus ~ .input-border {
   background-image: url("https://i.pinimg.com/564x/b8/84/3f/b8843fbed791d293b92bdf743d1cad31.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 102vh;
+  background-size: 104vh;
   border-left: 2px solid black;
 }
 .title2 {

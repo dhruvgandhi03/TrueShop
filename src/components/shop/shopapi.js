@@ -204,7 +204,7 @@ const Products = [
   {
     id: 21,
     image:
-      "https://overlays.co/cdn/shop/products/Untitled-1_0085_90_jpg_383d2ce7-d2c2-4fb2-b904-05ad819dbaeb.jpg?v=1679995508&width=800",
+      "https://assets.myntassets.com/h_1080,q_100,w_800/v1/assets/images/productimage/2020/10/17/f15da873-dbdf-4508-aec9-ab28addfcaf01602894757265-1.jpg",
     price: 600,
     title: "purple sweatshirt",
     quantity: 1,
@@ -213,7 +213,8 @@ const Products = [
   },
   {
     id: 22,
-    image: "https://overlays.co/cdn/shop/products/5.jpg?v=1679995473&width=800",
+    image:
+      "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbb%2Fe1%2Fbbe12755c820ac538d957f4f827b637e4dd595b0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
     price: 600,
     title: "black sweatshirt",
     quantity: 1,
@@ -223,7 +224,7 @@ const Products = [
   {
     id: 23,
     image:
-      "https://overlays.co/cdn/shop/products/Untitled-1_0056_61_jpg.jpg?v=1668632547&width=800",
+      "https://assets.ajio.com/medias/sys_master/root/20200929/VnZw/5f7248bdaeb269d563cd34d8/-473Wx593H-460477530-royalblue-MODEL.jpg",
     price: 600,
     title: "blue sweatshirt",
     quantity: 1,
@@ -233,7 +234,7 @@ const Products = [
   {
     id: 24,
     image:
-      "https://overlays.co/cdn/shop/products/Untitled-1_0121_126_jpg.jpg?v=1679995687&width=800",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/sweatshirt/3/6/2/xl-w11-orange-trond-original-imaghxvnyqhgfnbv.jpeg?q=90",
     price: 600,
     title: "orange sweatshirt",
     quantity: 1,
@@ -243,7 +244,7 @@ const Products = [
   {
     id: 25,
     image:
-      "https://overlays.co/cdn/shop/products/Untitled-1_0015_20_jpg_0c9e14f7-341f-464d-98c9-df07d7beb734.jpg?v=1668605925&width=800",
+      "https://www.beyours.in/cdn/shop/files/smoke-white-sweatshirt-5_800x.jpg?v=1695718452",
     price: 600,
     title: "white sweatshirt",
     quantity: 1,
